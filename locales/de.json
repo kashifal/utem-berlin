@@ -1,0 +1,22 @@
+{
+    "globalNav": {
+        "home": "Home",
+        "unternehmen": "Unternehmen",
+        "serienbeschichtung": "Serienbeschichtung",
+        "blog": "Blog",
+        "karriere": "Karriere",
+        "kontakt": "Kontakt"
+    },
+    "homeHero": {
+        "number": "Anzahl",
+        "IndustrielleTechnologien": "Industrielle Beschichtungstechnologien",
+        "Gleitlackbeschichtung": "Gleitlackbeschichtung",
+        "Korrosionsschutz": "Korrosionsschutz",
+        "PulverDekorative": "Pulverbeschichtung dekorative",
+        "Functional": "functional",
+        "PulverFunctional": "Pulverbeschichtung functional",
+        "PulverArchitecture": "Pulverbeschichtung architecture",
+        "Nasslack": "Nasslack-Beschichtung",
+        "KTL": "KTL-Beschichtung"
+    }
+}

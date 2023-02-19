@@ -1,0 +1,22 @@
+{
+    "globalNav": {
+        "home": "Home",
+        "unternehmen": "company",
+        "serienbeschichtung": "coating technology",
+        "blog": "blog",
+        "karriere": "career",
+        "PulverArchitecture": "powder coating architecture",
+        "kontakt": "contact"
+    },
+    "homeHero": {
+        "IndustrielleTechnologien": "industrial coating technologies",
+        "Gleitlackbeschichtung": "anti friction coating",
+        "Korrosionsschutz": "corrosion protection",
+        "PulverDekorative": "powder coating decorative",
+        "Functional": "functional",
+        "PulverFunctional": "functional",
+        "PulverArchitecture": "powder coating architecture",
+        "Nasslack": "wet paint coating",
+        "KTL": "ecoat coating"
+    }
+}

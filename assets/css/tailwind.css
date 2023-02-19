@@ -1,0 +1,39 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {font-family: 'Inter';src: url('/assets/fonts/Inter/Inter-Regular.ttf') format('truetype');}
+@font-face {font-family: 'InterBold';src: url('/assets/fonts/Inter/Inter-Bold.ttf') format('truetype');}
+/*@font-face {font-family: 'InterExtraBold';src: url('/assets/fonts/Inter/Inter-ExtraBold.ttf') format('truetype');}*/
+@font-face {font-family: 'InterExtraBold';src: url('/assets/fonts/circular/CircularStd-Black.otf') format('truetype');}
+
+
+
+@layer base {
+	html {}
+
+	body {
+		@apply antialiased;
+	}
+}
+
+
+@layer components {
+
+	/*  coatingai pills  */
+	.pills-ul {
+		@apply grid md:grid-cols-6 xl:grid-cols-6 gap-x-8 gap-y-4 2xl:gap-x-8 2xl:gap-y-4 px-0 py-4 text-white font-bold text-sm;
+	}
+	.pills-li {
+		@apply relative h-12 flex flex-col justify-center items-center border-2 border-amber-500 hover:ring hover:ring-amber-500 px-2 rounded-3xl py-2 cursor-pointer;
+	}
+	.pills-active {
+		@apply ring-2 ring-green-500 ring-offset-2 ring-offset-black;
+	}
+	.pills-flag-ok {
+		@apply absolute top-3.5 right-3 fill-green-600;
+	}
+}

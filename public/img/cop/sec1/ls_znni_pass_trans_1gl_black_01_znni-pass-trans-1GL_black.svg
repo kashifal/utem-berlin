@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1113.1 860.7" style="enable-background:new 0 0 1113.1 860.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:none;}
+	.st2{font-family:'Roboto-Regular';}
+	.st3{font-size:18px;}
+	.st4{font-family:'Roboto-Bold';}
+	.st5{fill:#FF00F3;}
+</style>
+<g id="znni-pass-trans-3gl-black">
+	<g id="Ebene_2">
+		
+			<image style="overflow:visible;" width="1000" height="680" xlink:href="../../../../../../../../Dropbox/hct/heo2019/online/web/c4d/loage/ls_znni_pass_trans_1gl_black_01.png"  transform="matrix(1 0 0 1 43.867 -55.4391)">
+		</image>
+	</g>
+	<polyline class="st0" points="31.9,351.6 6.9,351.6 6.9,497.6 51.9,497.6 	"/>
+	<polyline class="st0" points="1065.4,246.6 1092.9,246.6 1092.9,708.6 1001.9,708.6 	"/>
+	<polyline class="st0" points="1065.4,206.6 1092.9,206.6 1092.9,60.6 1001.9,60.6 	"/>
+	<polyline class="st0" points="1065.5,299.6 1079.9,299.6 1079.9,678.6 1002.9,678.6 	"/>
+	<circle cx="32.9" cy="350.6" r="4.5"/>
+	<circle cx="1061.9" cy="299.6" r="4.5"/>
+	<circle cx="1061.9" cy="247.6" r="4.5"/>
+	<circle cx="1061.9" cy="207.1" r="4.5"/>
+	<rect x="800.9" y="54.7" class="st1" width="172.6" height="25"/>
+	<text transform="matrix(1 0 0 1 813.2422 68.194)" class="st2 st3">1. Gleitlack TC 1000</text>
+	<rect x="775.9" y="671.4" class="st1" width="197.5" height="14.5"/>
+	<text transform="matrix(1 0 0 1 800.5421 684.8753)" class="st2 st3">Passivierung  8-15µm</text>
+	<rect x="578.4" y="640.4" class="st1" width="392.1" height="16.2"/>
+	<text transform="matrix(1 0 0 1 633.5821 653.93)" class="st4 st3">Korrosionsschutz: galvanisch Zink-Nickel</text>
+	<rect x="578.4" y="23.8" class="st1" width="392.1" height="16.2"/>
+	<text transform="matrix(1 0 0 1 790.3965 37.3129)" class="st4 st3">Deckschicht: Gleitlack</text>
+	<rect x="67.5" y="476.7" class="st1" width="252.4" height="40.6"/>
+	<text transform="matrix(1 0 0 1 67.4605 490.2152)"><tspan x="0" y="0" class="st2 st3">Substrat</tspan><tspan x="0" y="21.6" class="st2 st3">Oberfläche entfettet</tspan></text>
+	<rect x="754" y="703.3" class="st1" width="219.5" height="15.4"/>
+	<text transform="matrix(1 0 0 1 754.3643 716.8088)" class="st2 st3">Zink-Nickel-Schicht 8-15µm</text>
+</g>
+<g id="Ebene_3">
+</g>
+</svg>
