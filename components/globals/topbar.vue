@@ -41,7 +41,7 @@
           </svg>
         </a>
         <div class="pt-1 pl-2">
-          <p class="uppercase text-[13px]">hillebrand coating</p>
+          <p class="text-[13px]">UTOM.berlin</p>
         </div>
 <!--        <div class="pt-1 pl-16">
           <a href="/karriere" class="uppercase text-[13px] text-white hover:font-bold cursor-pointer">KARRIERE</a>
