@@ -1,4 +1,8 @@
 <script setup>
+import { onMounted, onUnmounted, ref } from 'vue';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 const awardsData = [
     {
         year: 2003,
@@ -25,17 +29,45 @@ const awardsData = [
         ]
     }
 ]
+
+const main = ref();
+const ctx = ref();
+
+onMounted(() => {
+    ctx.value = gsap.context((self) => {
+        const boxes = self.selector('.box');
+        
+        gsap.set(".box", {opacity: 0, y: 20});
+
+        ScrollTrigger.batch(".box", {
+        onEnter: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.2}),
+        onLeave: batch => gsap.to(batch, {opacity: 0, y: 20}),
+        onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15}),
+        onLeaveBack: batch => gsap.to(batch, {opacity: 0, y: 20}),
+
+        start: "top 60%",
+        end: "bottom 20%",
+        });
+
+    }, main.value); // <- Scope!
+});
+
+onUnmounted(() => {
+    ctx.value.revert(); // <- Easy Cleanup!
+});
 </script>
 
 <template>
     <div class="bg-white">
-        <div class="max-w-screen-xl mx-auto px-3 xl:px-0 py-16 md:py-32 lg:h-screen grid place-items-center">
-            <div class="flex flex-col lg:flex-row lg:space-x-28 xl:space-x-36 space-y-2 lg:space-y-0 w-full">
-                <h1 class="text-[3.3rem] md:text-6xl xl:text-[5rem] font-bold leading-none lg:mt-10">My <br> Awards</h1>
+        <div class="max-w-screen-xl mx-auto px-3 xl:px-0 py-16 md:py-32 lg:h-screen grid place-items-center" >
+            <div class="flex flex-col lg:flex-row lg:space-x-28 xl:space-x-36 space-y-2 lg:space-y-0 w-full" ref="main">
+                <section class="box">
+                    <h1 class="text-[3.3rem] md:text-6xl xl:text-[5rem] font-bold leading-none lg:mt-10 ">My <br> Awards</h1>
+                </section>
 
-                <section class="flex-1">
+                <section class="flex-1 ">
                     <div v-for="(data, index) in awardsData" :key="index"
-                        class="flex flex-col md:flex-row py-8 md:py-12 border-b-2 last:border-0 border-black">
+                        class="box flex flex-col md:flex-row py-8 md:py-12 border-b-2 last:border-0 border-black">
                         <div class="md:w-[13.8rem] flex flex-col md:flex-row">
                             <p class="text-[#999999]">{{ data.year }}</p>
                             <img class="w-28 object-contain object-top mt-10 md:mt-0 md:ml-16" :src="data.image" alt="">

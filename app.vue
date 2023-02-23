@@ -25,7 +25,7 @@
         w:{{ width }} h:{{ height }}
       </div> -->
       <div>
-        <span class="font-bold">{{ $mq.current }}</span>
+        <!-- <span class="font-bold">{{ $mq.current }}</span> -->
       </div>
     </div>
   </main>
@@ -35,10 +35,19 @@
 import { useMouse } from '@vueuse/core'
 import { useMq } from "vue3-mq"
 import { onMounted } from 'vue';
-const $mq = useMq();
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { InertiaPlugin } from "~/assets/js/gsap/InertiaPlugin"
+// import { Draggable } from '~/assets/js/gsap//Draggable';
 
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, InertiaPlugin);
+
+const $mq = useMq();
 const { x, y } = useMouse()
 /* const { width, height } = useWindowSize() */
+
 
 onMounted(() => {
   (function (src, cb) {

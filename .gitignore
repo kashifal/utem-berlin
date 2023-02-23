@@ -30,3 +30,5 @@ nuxt.d.ts
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+components/landingPage/LatestWork.rar
+components/landingPage/MyApproach.rar

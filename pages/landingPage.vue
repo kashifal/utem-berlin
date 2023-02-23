@@ -1,13 +1,22 @@
+
+<script setup>
+import { onMounted, onUnmounted, ref } from 'vue';
+import gsap from 'gsap';
+
+</script>
+
+
 <template>
     <main class="min-h-screen">
+
         <landingPageNav />
-        <landingPageHero />
+        <landingPageHero  />
         <landingPageVideo />
         <landingPageMyservice />
-        <landingPageLatestWork />
+        <landingPageLatestWork  />
         <landingPageMyApproach />
         <landingPageMyAwards />
-        <landingPageDescribe />
-        <landingPageFooter />
+        <landingPageCall />
+        <landingPageFooter/>
     </main>
 </template>

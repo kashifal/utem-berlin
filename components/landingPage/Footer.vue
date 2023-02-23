@@ -1,8 +1,39 @@
+<script setup>
+import { onMounted, onUnmounted, ref } from 'vue';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+const main = ref();
+const ctx = ref();
+
+onMounted(() => {
+    ctx.value = gsap.context((self) => {
+        const boxes = self.selector('.box');
+        gsap.set(".box", {opacity: 0, y: 20});
+
+        ScrollTrigger.batch(".box", {
+        onEnter: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15}),
+        onLeave: batch => gsap.to(batch, {opacity: 0, y: 20}),
+        onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15}),
+        onLeaveBack: batch => gsap.to(batch, {opacity: 0, y: 20}),
+
+        start: "top 90%",
+        end: "bottom 0%",
+        });
+        
+    }, main.value); // <- Scope!
+});
+
+onUnmounted(() => {
+    ctx.value.revert(); // <- Easy Cleanup!
+});
+</script>
+
 <template>
     <footer class="bg-[#F5F5F5]">
-        <div class="max-w-screen-xl mx-auto pt-20 md:pt-32 px-3 xl:px-0">
+        <div class="max-w-screen-xl mx-auto pt-20 md:pt-32 px-3 xl:px-0" ref="main">
             <section class="grid grid-cols-10 gap-x-5 xl:gap-x-20 gap-y-20 pb-20 md:pb-32 border-b-2 border-black">
-                <div class="col-span-10 xl:col-span-5 text-3xl md:text-[42px] font-semibold">
+                <div class="col-span-10 xl:col-span-5 text-3xl md:text-[42px] font-semibold box">
                     <h1>Boost Your Business Up To High Level</h1>
                     <h1 class="mt-14 md:mt-24">
                         <span>Start by </span>
@@ -11,35 +42,35 @@
                 </div>
 
                 <div class="col-span-10 md:col-span-5 xl:col-span-2">
-                    <p class="text-2xl md:text-3xl font-semibold">Links</p>
+                    <p class="text-2xl md:text-3xl font-semibold box">Links</p>
                     <ul class="mt-10 text-xs md:text-sm font-medium uppercase space-y-5">
-                        <li><a class="hover:text-[#FA4529]" href="/">faqs</a></li>
-                        <li><a class="hover:text-[#FA4529]" href="/">term & conditions</a></li>
-                        <li><a class="hover:text-[#FA4529]" href="/">privacy policy</a></li>
-                        <li><a class="hover:text-[#FA4529]" href="/">help</a></li>
-                        <li><a class="hover:text-[#FA4529]" href="/">affiliate</a></li>
-                        <li><a class="hover:text-[#FA4529]" href="/">services</a></li>
+                        <li><a class="hover:text-[#FA4529] box" href="/">faqs</a></li>
+                        <li><a class="hover:text-[#FA4529] box" href="/">term & conditions</a></li>
+                        <li><a class="hover:text-[#FA4529] box" href="/">privacy policy</a></li>
+                        <li><a class="hover:text-[#FA4529] box" href="/">help</a></li>
+                        <li><a class="hover:text-[#FA4529] box" href="/">affiliate</a></li>
+                        <li><a class="hover:text-[#FA4529] box" href="/">services</a></li>
                     </ul>
                 </div>
 
                 <div class="col-span-10 md:col-span-5 xl:col-span-3">
-                    <p class="text-2xl md:text-3xl font-semibold">Contact</p>
-                    <p class="mt-10 text-xl md:text-2xl text-[#666666] leading-normal mb-2">Dominik Stahlschmidt <br>
+                    <p class="text-2xl md:text-3xl font-semibold box">Contact</p>
+                    <p class="mt-10 text-xl md:text-2xl text-[#666666] leading-normal mb-2 box">Dominik Stahlschmidt <br>
                         Alt-Stralau 52 <br>
                         10245 Berlin <br>
                         Germany</p>
-                    <a class="text-[35px] md:text-[40px] hover:text-[#FA4529]" href="/">hello@utom.berlin</a>
+                    <a class="text-[35px] md:text-[40px] hover:text-[#FA4529] box" href="/">hello@utom.berlin</a>
 
                     <ul class="mt-20 text-xs md:text-sm font-medium uppercase space-y-5">
-                        <li><a class="hover:text-[#FA4529]" href="/">works</a></li>
-                        <li><a class="hover:text-[#FA4529]" href="/">about</a></li>
-                        <li><a class="hover:text-[#FA4529]" href="/">news</a></li>
-                        <li><a class="hover:text-[#FA4529]" href="/">contact</a></li>
+                        <li><a class="hover:text-[#FA4529] box" href="/">works</a></li>
+                        <li><a class="hover:text-[#FA4529] box" href="/">about</a></li>
+                        <li><a class="hover:text-[#FA4529] box" href="/">news</a></li>
+                        <li><a class="hover:text-[#FA4529] box" href="/">contact</a></li>
                     </ul>
                 </div>
             </section>
 
-            <section class="py-16 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-8">
+            <section class="py-16 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-8 box">
                 <a href="/">
                     <img class="w-52" src="https://dev.utom.berlin/assets/img/root/dxp_berlin_black.svg" alt="">
                 </a>
