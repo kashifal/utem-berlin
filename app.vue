@@ -10,10 +10,10 @@
   </Html>
 
   <main>
-    <globalsTopbar />
+    <!-- <globalsTopbar />
     <globalsNav @show-menu="showMenu = true" @show-coatingai-modal="showCoatingaiModal = true" />
     <globalsNav-mobile @hide-menu="showMenu = false" :show-menu="showMenu" class=" lg:hidden" />
-    <globalsCoatingai-modal-dark @hide-coatingai-modal="showCoatingaiModal = false" :show-coatingai-modal="showCoatingaiModal" />
+    <globalsCoatingai-modal-dark @hide-coatingai-modal="showCoatingaiModal = false" :show-coatingai-modal="showCoatingaiModal" /> -->
     <NuxtPage />
 
     <!-- HUD window -->
