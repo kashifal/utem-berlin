@@ -10,16 +10,16 @@ const ctx = ref();
 onMounted(() => {
     ctx.value = gsap.context((self) => {
         const boxes = self.selector('.box');
-        gsap.set(".box", {opacity: 0, y: 20});
+        gsap.set(".box", { opacity: 0, y: 40 });
 
         ScrollTrigger.batch(".box", {
-        onEnter: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.2}),
-        onLeave: batch => gsap.to(batch, {opacity: 0, y: 20}),
-        onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15}),
-        onLeaveBack: batch => gsap.to(batch, {opacity: 0, y: 20}),
+            onEnter: batch => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.2 }),
+            onLeave: batch => gsap.to(batch, { opacity: 0, y: 40 }),
+            onEnterBack: batch => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15 }),
+            onLeaveBack: batch => gsap.to(batch, { opacity: 0, y: 40 }),
 
-        start: "top 60%",
-        end: "bottom 20%",
+            start: "top 90%",
+            end: "bottom 5%",
         });
     }, main.value); // <- Scope!
 });
@@ -29,9 +29,8 @@ onUnmounted(() => {
 });
 </script>
 <template>
-    <section class="h-screen mx-auto" ref="main">
-        <img class="h-full w-full object-cover box"
-            src="https://images.unsplash.com/photo-1471039497385-b6d6ba609f9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            alt="">
+    <section class="h-[70vh] md:h-screen mx-auto bg-black relative" ref="main">
+        <video poster="" src='@/assets/office.mp4' type="video/mp4" autoplay loop muted playsinline
+            class="h-[75%] w-full object-cover sticky box top-[15%]" />
     </section>
 </template>
