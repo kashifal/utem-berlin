@@ -63,9 +63,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <nav class="transition-all duration-75 ease-out " id="mainHeader"  ref="main">
-        <div class="bg-[#E03F32] px-3 overflow-hidden w-full header navBox
-        flex justify-center items-center relative" >
+    <nav class="transition-all duration-75 ease-out relative" id="mainHeader"  ref="main">
+        <div class="bg-[#E03F32] px-3 overflow-hidden header navBox
+        flex justify-center items-center" >
             <!-- <div class="absolute left-0 bottom-0 max-w-screen-xl h-1 mx-auto bg-black w-full"></div> -->
             <div class="max-w-screen-xl w-full border-b-2 border-black h-full mx-auto flex justify-between items-center">
                 
@@ -156,9 +156,11 @@ onUnmounted(() => {
 
 <style scoped>
     .header {
-        transition: all 300ms ease-out;
+    position: relative;
+    transition: all 300ms ease-out;
     background-color: #E03F32;
     height: 150px;
+    overflow: hidden;
     }
     .header--scrolled {
     transition: all 300ms ease-out;
@@ -168,6 +170,7 @@ onUnmounted(() => {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 20;
+    overflow-x: hidden;
     }
 </style>

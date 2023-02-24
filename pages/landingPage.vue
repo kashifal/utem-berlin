@@ -7,7 +7,7 @@ import gsap from 'gsap';
 
 
 <template>
-    <main class="min-h-screen">
+    <main class="min-h-screen ">
 
         <landingPageNav />
         <landingPageHero  />

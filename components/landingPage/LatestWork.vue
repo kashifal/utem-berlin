@@ -287,7 +287,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <div class="bg-white">
+    <div class="bg-white overflow-hidden">
         <div class="mt-44 mb-32 space-y-24" ref="main">
             <!-- heading -->
             <div class="flex flex-col justify-between space-y-10 md:flex-row md:space-y-0">

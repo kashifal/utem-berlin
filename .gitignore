@@ -32,3 +32,4 @@ nuxt.d.ts
 !.yarn/versions
 components/landingPage/LatestWork.rar
 components/landingPage/MyApproach.rar
+components/landingPage.rar
