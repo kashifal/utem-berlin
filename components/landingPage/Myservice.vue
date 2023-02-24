@@ -18,7 +18,7 @@ onMounted(() => {
         onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15}),
         onLeaveBack: batch => gsap.to(batch, {opacity: 0, y: 20}),
 
-        start: "top 80%",
+        start: "top 90%",
         end: "bottom 10%",
         });
 
@@ -32,7 +32,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <div class="bg-white mt-32" ref="main">
+    <div class="bg-white pt-32" ref="main">
         <div
             class="max-w-screen-xl mx-auto flex flex-col lg:flex-row px-4 lg:px-0 justify-between space-y-16 
             lg:space-y-0 space-x-0 lg:space-x-24 ">

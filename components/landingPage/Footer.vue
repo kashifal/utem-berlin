@@ -18,7 +18,7 @@ onMounted(() => {
         onLeaveBack: batch => gsap.to(batch, {opacity: 0, y: 20}),
 
         start: "top 90%",
-        end: "bottom 0%",
+        end: "bottom 5%",
         });
         
     }, main.value); // <- Scope!
@@ -70,7 +70,7 @@ onUnmounted(() => {
                 </div>
             </section>
 
-            <section class="py-16 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-8 box">
+            <section class="py-16 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-8">
                 <a href="/">
                     <img class="w-52" src="https://dev.utom.berlin/assets/img/root/dxp_berlin_black.svg" alt="">
                 </a>
