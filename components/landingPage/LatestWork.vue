@@ -56,7 +56,7 @@ onMounted(() => {
         startX +
         spaceBefore[0] +
         items[length - 1].offsetWidth *
-          gsap.getProperty(items[length - 1], "scaleX") +
+        gsap.getProperty(items[length - 1], "scaleX") +
         (parseFloat(config.paddingRight) || 0),
       populateWidths = () => {
         let b1 = container.getBoundingClientRect(),
@@ -65,7 +65,7 @@ onMounted(() => {
           widths[i] = parseFloat(gsap.getProperty(el, "width", "px"));
           xPercents[i] = snap(
             (parseFloat(gsap.getProperty(el, "x", "px")) / widths[i]) * 100 +
-              gsap.getProperty(el, "xPercent")
+            gsap.getProperty(el, "xPercent")
           );
           b2 = el.getBoundingClientRect();
           spaceBefore[i] = b2.left - (i ? b1.right : b1.left);
@@ -86,8 +86,8 @@ onMounted(() => {
           times.forEach((t, i) => {
             times[i] = timeWrap(
               tl.labels["label" + i] +
-                (tl.duration() * widths[i]) / 2 / totalWidth -
-                timeOffset
+              (tl.duration() * widths[i]) / 2 / totalWidth -
+              timeOffset
             );
           });
       },
@@ -243,27 +243,27 @@ onMounted(() => {
   }
 
   ctx.value = gsap.context((self) => {
-    const colors = ["#f38630","#6fb936", "#ccc", "#6fb936"];
-    
+    const colors = ["#f38630", "#6fb936", "#ccc", "#6fb936"];
+
     let activeElement;
     const boxes = self.selector(".card");
     // gsap.set(boxes , {
-	//     backgroundColor: gsap.utils.wrap(colors)
+    //     backgroundColor: gsap.utils.wrap(colors)
     // });
 
-    gsap.set(".box", {opacity: 0, y: 20});
+    gsap.set(".box", { opacity: 0, y: 20 });
 
     ScrollTrigger.batch(".box", {
-    onEnter: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15}),
-    onLeave: batch => gsap.to(batch, {opacity: 0, y: 20}),
-    onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15}),
-    onLeaveBack: batch => gsap.to(batch, {opacity: 0, y: 20}),
+      onEnter: batch => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15 }),
+      onLeave: batch => gsap.to(batch, { opacity: 0, y: 20 }),
+      onEnterBack: batch => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15 }),
+      onLeaveBack: batch => gsap.to(batch, { opacity: 0, y: 20 }),
 
-    start: "top 60%",
-    end: "bottom 5%",
+      start: "top 60%",
+      end: "bottom 5%",
     });
 
-   const loop = horizontalLoop(boxes, {
+    const loop = horizontalLoop(boxes, {
       paused: true,
       draggable: true, // make it draggable
       center: false, // active element is the one in the center of the container rather than th left edge
@@ -275,7 +275,7 @@ onMounted(() => {
         // activeElement = element;
       },
     });
-    boxes.forEach((box, i) => box.addEventListener("click", () => loop.toIndex(i, {duration: 0.8, ease: "power1.inOut"})));
+    boxes.forEach((box, i) => box.addEventListener("click", () => loop.toIndex(i, { duration: 0.8, ease: "power1.inOut" })));
   }, main.value);
 
 });
@@ -287,137 +287,122 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <div class="bg-white overflow-hidden">
-        <div class="mt-44 mb-32 space-y-24" ref="main">
-            <!-- heading -->
-            <div class="flex flex-col justify-between space-y-10 md:flex-row md:space-y-0">
-                <div class="flex items-center">
-                    <h1 class="text-[3.75rem] font-extrabold leading-tight text-black lg:text-[5rem] box">
-                        Latest Works
-                    </h1>
-                    <a href="/"
-                        class="group mb-3 ml-20 hidden self-end text-lg font-semibold text-black box
-                         hover:text-[#ff4437] hover:transition-all hover:duration-[0.6s] lg:flex">ALL
-                        PROJECTS
-                       
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                class="h-7 w-7 group-hover:translate-x-1 group-hover:stroke-[#ff4437] 
-                                group-hover:transition-all group-hover:duration-[0.6s]"
-                                viewBox="0 0 24 24" strokeWidth="{1.5}" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg> 
-                        </a>
-                </div>
-                <div class="flex flex-row space-x-5 pb-3 md:flex-col md:space-x-0 lg:flex-row lg:space-x-5">
-                    <div
-                        class="box group flex h-12 w-12 items-center justify-center self-end border-[1.5px] 
-                        border-black/30 hover:relative hover:cursor-pointer hover:overflow-hidden hover:border-0 hover:bg-[#ff4437] hover:duration-[0.3s]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor"
-                            class="h-6 w-6 stroke-gray-400 group-hover:absolute group-hover:right-[-20%] 
-                            group-hover:-translate-x-5 group-hover:stroke-white group-hover:transition-all 
-                            group-hover:duration-[0.4s]">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                        </svg>
-                    </div>
+  <div class="bg-white overflow-x-hidden">
+    <div class="mt-44 mb-32 space-y-24" ref="main">
+      <!-- heading -->
+      <div class="flex flex-col justify-between space-y-10 md:flex-row md:space-y-0">
+        <div class="flex items-center">
+          <h1 class="text-[3.75rem] font-extrabold leading-tight text-black lg:text-[5rem] box">
+            Latest Works
+          </h1>
+          <a href="/" class="group mb-3 ml-20 hidden self-end text-lg font-semibold text-black box
+                           hover:text-[#ff4437] hover:transition-all hover:duration-[0.6s] lg:flex">ALL
+            PROJECTS
 
-                    <div
-                        class="box group flex h-12 w-12 items-center justify-center self-end border-[1.5px] 
-                        border-black/30 hover:relative hover:cursor-pointer hover:border-0 hover:bg-[#ff4437] 
-                        hover:duration-[0.3s]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor"
-                            class="left-[-20%] h-6 w-6 stroke-gray-400 group-hover:absolute group-hover:translate-x-5
-                             group-hover:stroke-white group-hover:transition-all group-hover:duration-[0.4s]">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-
-            <!-- slider -->
-            <div class="slider-wrapper flex flex-rows space-x-10 " >
-                <div class="card group space-y-10 mx-10 ">
-                    <div class="box overflow-hidden">
-                        <img src="https://dev.utom.berlin/assets/img/portfolio/work-1.png"
-                            class="image w-[65rem] object-contain grayscale hover:cursor-pointer group-hover:grayscale-0 
-                            group-hover:transition-all group-hover:duration-[1s] transition-all ease-out hover:scale-110"
-                            alt="" />
-                    </div>
-                    <div>
-                        <div
-                            class="mb-3 text-base font-medium uppercase text-[#666666] group-hover:text-black/75 group-hover:transition-all group-hover:duration-[1s]">
-                            UI/UX
-                        </div>
-                        <h4
-                            class="text-3xl font-bold text-[#666666] hover:cursor-pointer hover:underline hover:duration-[1s] group-hover:text-black group-hover:transition-all group-hover:duration-[1s]">
-                            eMobility Landing Page
-                        </h4>
-                    </div>
-                </div>
-                <div class="card group space-y-10 mx-10">
-                    <div class="box overflow-hidden">
-                        <img src="https://dev.utom.berlin/assets/img/portfolio/work-2.png"
-                            class="w-[65rem] object-contain grayscale hover:cursor-pointer group-hover:grayscale-0 
-                            group-hover:transition-all group-hover:duration-[1s] transition-all ease-out hover:scale-110"
-                            alt="" />
-                    </div>
-                    <div>
-                        <div
-                            class="mb-3 text-base font-medium uppercase text-[#666666] group-hover:text-black/75 
-                            group-hover:transition-all group-hover:duration-[1s]">
-                            product
-                        </div>
-                        <h4
-                            class="text-3xl font-bold text-[#666666] hover:cursor-pointer hover:underline hover:duration-[1s] 
-                            group-hover:text-black group-hover:transition-all group-hover:duration-[1s]">
-                            The Battery Show Europe 2021
-                        </h4>
-                    </div>
-                </div>
-                <div class="card group space-y-10 mx-10">
-                    <div class="box overflow-hidden">
-                        <img src="https://dev.utom.berlin/assets/img/portfolio/work-3.png"
-                            class="w-[65rem] object-contain grayscale hover:cursor-pointer group-hover:grayscale-0 
-                            group-hover:transition-all group-hover:duration-[1s] transition-all ease-out hover:scale-110"
-                            alt="" />
-                    </div>
-                    <div>
-                        <div
-                            class="mb-3 text-base font-medium uppercase text-[#666666] group-hover:text-black/75 
-                            group-hover:transition-all group-hover:duration-[1s]">
-                            Branding,Packaging
-                        </div>
-                        <h4
-                            class="text-3xl font-bold text-[#666666] hover:cursor-pointer hover:underline hover:duration-[1s] 
-                            group-hover:text-black group-hover:transition-all group-hover:duration-[1s]">
-                            Bemusterungstool
-                        </h4>
-                    </div>
-                </div>
-                <div class="card group space-y-10 mx-10">
-                    <div class="box overflow-hidden">
-                        <img src="https://dev.utom.berlin/assets/img/portfolio/work-3.png"
-                            class="w-[65rem] object-contain grayscale hover:cursor-pointer group-hover:grayscale-0 
-                            group-hover:transition-all group-hover:duration-[1s] transition-all ease-out hover:scale-110"
-                            alt="" />
-                    </div>
-                    <div>
-                        <div
-                            class="mb-3 text-base font-medium uppercase text-[#666666] group-hover:text-black/75 
-                            group-hover:transition-all group-hover:duration-[1s]">
-                            Branding,Packaging
-                        </div>
-                        <h4
-                            class="text-3xl font-bold text-[#666666] hover:cursor-pointer hover:underline hover:duration-[1s] 
-                            group-hover:text-black group-hover:transition-all group-hover:duration-[1s]">
-                            Bemusterungstool
-                        </h4>
-                    </div>
-                </div>
-            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-7 w-7 group-hover:translate-x-1 group-hover:stroke-[#ff4437] 
+                                  group-hover:transition-all group-hover:duration-[0.6s]" viewBox="0 0 24 24"
+              strokeWidth="{1.5}" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </a>
         </div>
+        <div class="flex flex-row space-x-5 pb-3 md:flex-col md:space-x-0 lg:flex-row lg:space-x-5">
+          <div
+            class="box group flex h-12 w-12 items-center justify-center self-end border-[1.5px] 
+                          border-black/30 hover:relative hover:cursor-pointer hover:overflow-hidden hover:border-0 hover:bg-[#ff4437] hover:duration-[0.3s]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="h-6 w-6 stroke-gray-400 group-hover:absolute group-hover:right-[-20%] 
+                              group-hover:-translate-x-5 group-hover:stroke-white group-hover:transition-all 
+                              group-hover:duration-[0.4s]">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+          </div>
+
+          <div class="box group flex h-12 w-12 items-center justify-center self-end border-[1.5px] 
+                          border-black/30 hover:relative hover:cursor-pointer hover:border-0 hover:bg-[#ff4437] 
+                          hover:duration-[0.3s]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="left-[-20%] h-6 w-6 stroke-gray-400 group-hover:absolute group-hover:translate-x-5
+                               group-hover:stroke-white group-hover:transition-all group-hover:duration-[0.4s]">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- slider -->
+      <div class="slider-wrapper flex flex-rows space-x-10 ">
+        <div class="card group space-y-10 mx-10 ">
+          <div class="box overflow-hidden">
+            <img src="https://dev.utom.berlin/assets/img/portfolio/work-1.png"
+              class="image w-[65rem] object-contain grayscale hover:cursor-pointer group-hover:grayscale-0 
+                              group-hover:transition-all group-hover:duration-[1s] transition-all ease-out hover:scale-110" alt="" />
+          </div>
+          <div>
+            <div
+              class="mb-3 text-base font-medium uppercase text-[#666666] group-hover:text-black/75 group-hover:transition-all group-hover:duration-[1s]">
+              UI/UX
+            </div>
+            <h4
+              class="text-3xl font-bold text-[#666666] hover:cursor-pointer hover:underline hover:duration-[1s] group-hover:text-black group-hover:transition-all group-hover:duration-[1s]">
+              eMobility Landing Page
+            </h4>
+          </div>
+        </div>
+        <div class="card group space-y-10 mx-10">
+          <div class="box overflow-hidden">
+            <img src="https://dev.utom.berlin/assets/img/portfolio/work-2.png"
+              class="w-[65rem] object-contain grayscale hover:cursor-pointer group-hover:grayscale-0 
+                              group-hover:transition-all group-hover:duration-[1s] transition-all ease-out hover:scale-110" alt="" />
+          </div>
+          <div>
+            <div class="mb-3 text-base font-medium uppercase text-[#666666] group-hover:text-black/75 
+                              group-hover:transition-all group-hover:duration-[1s]">
+              product
+            </div>
+            <h4 class="text-3xl font-bold text-[#666666] hover:cursor-pointer hover:underline hover:duration-[1s] 
+                              group-hover:text-black group-hover:transition-all group-hover:duration-[1s]">
+              The Battery Show Europe 2021
+            </h4>
+          </div>
+        </div>
+        <div class="card group space-y-10 mx-10">
+          <div class="box overflow-hidden">
+            <img src="https://dev.utom.berlin/assets/img/portfolio/work-3.png"
+              class="w-[65rem] object-contain grayscale hover:cursor-pointer group-hover:grayscale-0 
+                              group-hover:transition-all group-hover:duration-[1s] transition-all ease-out hover:scale-110" alt="" />
+          </div>
+          <div>
+            <div class="mb-3 text-base font-medium uppercase text-[#666666] group-hover:text-black/75 
+                              group-hover:transition-all group-hover:duration-[1s]">
+              Branding,Packaging
+            </div>
+            <h4 class="text-3xl font-bold text-[#666666] hover:cursor-pointer hover:underline hover:duration-[1s] 
+                              group-hover:text-black group-hover:transition-all group-hover:duration-[1s]">
+              Bemusterungstool
+            </h4>
+          </div>
+        </div>
+        <div class="card group space-y-10 mx-10">
+          <div class="box overflow-hidden">
+            <img src="https://dev.utom.berlin/assets/img/portfolio/work-3.png"
+              class="w-[65rem] object-contain grayscale hover:cursor-pointer group-hover:grayscale-0 
+                              group-hover:transition-all group-hover:duration-[1s] transition-all ease-out hover:scale-110" alt="" />
+          </div>
+          <div>
+            <div class="mb-3 text-base font-medium uppercase text-[#666666] group-hover:text-black/75 
+                              group-hover:transition-all group-hover:duration-[1s]">
+              Branding,Packaging
+            </div>
+            <h4 class="text-3xl font-bold text-[#666666] hover:cursor-pointer hover:underline hover:duration-[1s] 
+                              group-hover:text-black group-hover:transition-all group-hover:duration-[1s]">
+              Bemusterungstool
+            </h4>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <style >
@@ -438,8 +423,6 @@ onUnmounted(() => {
   position: relative;
   overflow: hidden;
   width: 150vw;
-  
+
 }
-
-
 </style>

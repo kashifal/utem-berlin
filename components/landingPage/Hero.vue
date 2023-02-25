@@ -32,7 +32,7 @@ onUnmounted(() => {
 <template >
     <div class="bg-[#FA4529] ">
 
-        <div class="max-w-screen-xl mx-auto pt-12 pb-56 px-3 " ref="main">
+        <div class="max-w-screen-xl mx-auto pt-12 px-3 " ref="main">
             <div class="text-white text-2xl leading-none md:text-7xl font-bold ">
                <h1 class="box"> B2B MARKETING. </h1>
                <h1 class="box"> DIGITAL SALES. </h1>

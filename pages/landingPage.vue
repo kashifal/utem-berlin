@@ -7,16 +7,19 @@ import gsap from 'gsap';
 
 
 <template>
-    <main class="min-h-screen ">
-
-        <landingPageNav />
-        <landingPageHero  />
-        <landingPageVideo />
-        <landingPageMyservice />
-        <landingPageLatestWork  />
-        <landingPageMyApproach />
-        <landingPageMyAwards />
-        <landingPageCall />
-        <landingPageFooter/>
+       <main class="min-h-screen">
+        <div class="relative z-10"> 
+            <landingPageNav />
+            <landingPageHero />
+            <landingPageVideoNew />
+            <landingPageMyservice />
+            <landingPageLatestWork />
+            <landingPageMyApproach />
+            <landingPageMyAwards />
+            <landingPageCall />
+            <landingPageQuote />
+        </div>
+      
+        <landingPageFooter />
     </main>
 </template>

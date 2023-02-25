@@ -17,17 +17,17 @@
     <NuxtPage />
 
     <!-- HUD window -->
-    <!-- <div class="sticky bottom-0 text-[11px] w-[220px] bg-red-100 px-2 flex">
+    <div class="sticky bottom-0 text-[11px] w-[220px] bg-red-100 px-2 flex">
       <div class="w-[95px]">
         x:{{ x }} y:{{ y }}
       </div>
-      <div class="w-[105px]">
+      <!-- <div class="w-[105px]">
         w:{{ width }} h:{{ height }}
       </div>
       <div>
         <span class="font-bold">{{ $mq.current }}</span>
-      </div>
-    </div> -->
+      </div> -->
+    </div>
   </main>
 </template>
 
@@ -45,7 +45,7 @@ import { InertiaPlugin } from "~/assets/js/gsap/InertiaPlugin"
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, InertiaPlugin);
 
 // const $mq = useMq();
-// const { x, y } = useMouse()
+const { x, y } = useMouse()
 /* const { width, height } = useWindowSize() */
 
 
