@@ -13,8 +13,9 @@
     <globalsTopbar />
     <globalsNav @show-menu="showMenu = true" @show-coatingai-modal="showCoatingaiModal = true" />
     <globalsNav-mobile @hide-menu="showMenu = false" :show-menu="showMenu" class=" lg:hidden" />
-    <globalsCoatingai-modal-dark @hide-coatingai-modal="showCoatingaiModal = false" :show-coatingai-modal="showCoatingaiModal" /> &ndash;&gt;
-    <NuxtPage />
+    <globalsCoatingai-modal-dark @hide-coatingai-modal="showCoatingaiModal = false" :show-coatingai-modal="showCoatingaiModal" />
+    <NuxtPage :key="$route.fullPath" />
+
 
     <!-- HUD window -->
     <div class="sticky bottom-0 text-[11px] w-[220px] bg-red-100 px-2 flex">
