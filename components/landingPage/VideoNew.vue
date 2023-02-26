@@ -36,7 +36,7 @@ onUnmounted(() => {
 <div>
   <section class="parallax">
     <video class="parallaxContent bg-white" autoplay muted loop>
-      <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      <source src="http://d1wejytifqhe5y.cloudfront.net/ed852693-079c-4251-a1f2-ecd19b62078d/hls/Vielfalt+leben+in+Deiner+Stadt.m3u8" type="video/mp4">
     </video>
   </section>
 </div>
@@ -46,7 +46,7 @@ onUnmounted(() => {
 .parallax {
 
     position: relative;
-    padding-top: 300px;
+    padding-top: 330px;
     padding-bottom: 300px;
 }
 .parallaxContent {

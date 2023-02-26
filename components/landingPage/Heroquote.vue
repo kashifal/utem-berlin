@@ -37,7 +37,7 @@ onUnmounted(() => {
 
             <section class="border-b-2 border-black h-10  pb-28 md:pb-96"></section>
           <div class="pb-64 box">
-            <p class="text-white text-[2.5rem] text-left font-normal m-[0,0,1.875rem] pt-10 pb-24  box">It´s my pleasure to
+            <p class="text-white text-[2.5rem] text-left font-normal m-[0,0,1.875rem] pt-32 pb-24  box">It´s my pleasure to
                 help
                 clients suceed by creating identities, digital experiences, and printmaterials that communicate clearly,
                 achieve

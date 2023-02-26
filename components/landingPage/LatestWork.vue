@@ -259,7 +259,7 @@ onMounted(() => {
       onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15}),
       onLeaveBack: batch => gsap.to(batch, {opacity: 0, y: 20}),
 
-      start: "top 60%",
+      start: "top 75%",
       end: "bottom 5%",
     });
 
