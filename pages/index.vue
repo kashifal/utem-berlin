@@ -1,5 +1,5 @@
 <template>
-  <div class="scroll-smooth">
+  <div class="">
       <Html lang="de-DE">
         <Head>
             <Title>Home</Title>

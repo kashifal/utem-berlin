@@ -44,7 +44,7 @@ onUnmounted(() => {
                     <video poster="" src='@/assets/office.mp4' type="video/mp4" autoplay loop muted playsinline
                         class="h-full w-full object-cover" />
                     <div
-                        class="absolute lg:bottom-[-100%] group-hover:bottom-0 transition-all ease-in duration-[0.4s]  
+                        class="absolute lg:bottom-[-100%] group-hover:bottom-0 transition-all ease-in duration-[0.4s]
                         border-2 border-black bg-white w-full h-full p-5 flex flex-col justify-between">
                         <div class="space-y-3">
                             <p class="font-bold box">COMPETENCE</p>
@@ -56,16 +56,6 @@ onUnmounted(() => {
                     </div>
                 </div>
             </section>
-
-            <section class="border-b-2 border-black h-10  pb-28 md:pb-96  box"></section>
-            <p class="text-white text-[2.5rem] text-left font-normal m-[0,0,1.875rem] pt-10 pb-24  box">It´s my pleasure to
-                help
-                clients suceed by creating identities, digital experiences, and printmaterials that communicate clearly,
-                achieve
-                marketing goals & look fantastic Lorem uispum dolor sit amert tunoer poea opefse ceefo goipully.</p>
-            <button class="text-white text-lg font-semibold bg-[#E03F32]  px-10 py-4 box">
-                <a href="/">Learn More</a>
-            </button>
         </div>
     </div>
 </template>

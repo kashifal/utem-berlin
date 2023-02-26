@@ -8,9 +8,10 @@ import gsap from 'gsap';
 
 <template>
        <main class="min-h-screen">
-        <div class="relative z-10"> 
+        <div class="relative z-10">
             <landingPageNav />
             <landingPageHero />
+            <landingPageHeroquote />
             <landingPageVideoNew />
             <landingPageMyservice />
             <landingPageLatestWork />
@@ -19,7 +20,7 @@ import gsap from 'gsap';
             <landingPageCall />
             <landingPageQuote />
         </div>
-      
+
         <landingPageFooter />
     </main>
 </template>

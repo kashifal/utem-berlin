@@ -46,7 +46,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <div ref="main" class="parallax relative z-10 mb-[50%]">
+    <div ref="main" class=" relative z-10 mb-[50%]">
         <section ref="quoteRef"
             class="quote py-24 md:py-40 min:h-screen bg-[url('https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80')] bg-cover bg-center bg-no-repeat bg-fixed absolute -z-10 top-0 left-0 w-full parallax">
             <div class="max-w-screen-xl mx-auto px-4 xl:px-0 grid place-items-center h-fit w-full">
