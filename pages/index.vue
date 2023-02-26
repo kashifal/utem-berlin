@@ -1,18 +1,26 @@
+
+<script setup>
+import { onMounted, onUnmounted, ref } from 'vue';
+import gsap from 'gsap';
+
+</script>
+
+
 <template>
-  <div class="">
-      <Html lang="de-DE">
-        <Head>
-            <Title>Home</Title>
-            <Meta name="description1" content="brief decription of page1" />
-        </Head>
-      </Html>
+       <main class="min-h-screen">
+        <div class="relative z-10">
+<!--            <landingPageNav />-->
+            <landingPageHero />
+            <landingPageHeroquote />
+            <landingPageVideoNew />
+            <landingPageMyservice />
+            <landingPageLatestWork />
+            <landingPageMyApproach />
+            <landingPageMyAwards />
+            <landingPageCall />
+            <landingPageQuote />
+        </div>
 
-      <homeHero />
-      <homeKompetenz />
-      <homeSektoren />
-      <homeBlog />
-      <homeJobs />
-      <GlobalsFooter />
-  </div>
+        <landingPageFooter />
+    </main>
 </template>
-

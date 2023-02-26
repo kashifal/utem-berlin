@@ -32,7 +32,7 @@ onUnmounted(() => {
 <template >
     <div class="bg-[#FA4529] ">
 
-        <div class="w-screen px-32 mx-auto pt-12 px-3 " ref="main">
+        <div class="w-screen px-32 mx-auto  px-3 " ref="main">
 
 
             <section class="border-b-2 border-black h-10  pb-28 md:pb-96"></section>

@@ -59,7 +59,7 @@ onUnmounted(() => {
 
 <template>
   <div class="bg-white">
-    <div class="max-w-screen-xl mx-auto px-3 xl:px-0 py-16 md:py-32 lg:h-screen grid place-items-center" >
+    <div class="max-w-screen-xl mx-auto px-3 xl:px-0 py-10 md:py-32 lg:h-screen grid place-items-center" >
       <div class="flex flex-col lg:flex-row lg:space-x-28 xl:space-x-36 space-y-2 lg:space-y-0 w-full" ref="main">
         <section class="box">
           <h1 class="text-[3.3rem] md:text-6xl xl:text-[5rem] font-InterExtraBold  leading-none lg:mt-10 ">My <br> Awards</h1>

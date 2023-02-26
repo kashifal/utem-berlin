@@ -302,7 +302,7 @@ onUnmounted(() => {
 
             <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                  class="h-7 w-7 group-hover:translate-x-1 group-hover:stroke-[#ff4437]
-                                group-hover:transition-all group-hover:duration-[0.6s]"
+                                group-hover:transition-all group-hover:duration-[0.3s]"
                  viewBox="0 0 24 24" strokeWidth="{1.5}" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>
