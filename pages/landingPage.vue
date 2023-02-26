@@ -9,7 +9,7 @@ import gsap from 'gsap';
 <template>
        <main class="min-h-screen">
         <div class="relative z-10">
-            <landingPageNav />
+<!--            <landingPageNav />-->
             <landingPageHero />
             <landingPageHeroquote />
             <landingPageVideoNew />
