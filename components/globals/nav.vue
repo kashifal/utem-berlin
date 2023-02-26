@@ -1,6 +1,6 @@
 <template>
   <!-- navigation -->
-  <div class="fixed z-10 top-0 w-full bg-[#e03d24]">
+  <div class="fixed z-50 top-0 w-full bg-[#e03d24]">
 
     <!-- navigation desktop -->
     <div class="nav-menu z-50 flex justify-start items-center px-10 md:px-[40px] xl:px-[130px]">
