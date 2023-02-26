@@ -38,7 +38,7 @@ onUnmounted(() => {
                         project
                     </p>
                     <h1
-                        class="box text-white text-[4.9rem] md:text-[7.5rem] font-semibold leading-none md:leading-normal 
+                        class="box text-white text-[4.9rem] md:text-[7.5rem] font-semibold font-InterExtraBold leading-none md:leading-normal
                         mt-3 md:mt-0 mb-5 md:mb-0 heading">
                         Call
                         <br class="md:hidden"> Moonex
