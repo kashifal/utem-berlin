@@ -14,7 +14,7 @@ import gsap from 'gsap';
             <landingPageHeroquote />
             <landingPageVideoNew />
             <landingPageMyservice />
-            <landingPageLatestWork />
+<!--            <landingPageLatestWork />-->
             <landingPageMyApproach />
             <landingPageMyAwards />
             <landingPageCall />
