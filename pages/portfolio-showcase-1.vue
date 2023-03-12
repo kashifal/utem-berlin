@@ -1,19 +1,26 @@
-<template>
-  <div class="mt-32 w-full overflow-x-hidden">
-    <portfoliooneHerosection />
-    <portfoliooneLightbox />
-    <portfoliooneText />
-    <portfoliooneChallenges />
-    <portfoliooneTweet />
-    <portfoliooneSolution />
-    <portfoliooneGridlightbox />
-    <portfoliooneNextprojects />
+<script setup>
+import { onMounted, onUnmounted, ref } from 'vue';
+import gsap from 'gsap';
 
-  </div>
+</script>
+
+<template>
+  <main class="min-h-screen">
+    <div class="relative z-10 bg-white">
+  <!--  <div class="mt-32 w-full overflow-x-hidden">-->
+      <portfoliooneHerosection />
+      <portfoliooneLightbox />
+<!--      <landingPageHeroquote />-->
+      <portfoliooneText />
+      <portfoliooneChallenges />
+      <portfoliooneTweet />
+      <portfoliooneSolution />
+      <portfoliooneGridlightbox />
+      <portfoliooneNextprojects />
+
+    </div>
+    <landingPageFooter />
+  </main>
 </template>
 
-<script setup>
-import { Icon } from "@iconify/vue";
-import { ref } from "vue";
-</script>
 

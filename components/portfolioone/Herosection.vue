@@ -1,3 +1,5 @@
+
+
 <template>
     <div class="max-w-[1550px] mx-auto mt-64 px-6 md:px-4">
       <div class="w-full h-auto grid grid-cols-12 gap-y-12">
