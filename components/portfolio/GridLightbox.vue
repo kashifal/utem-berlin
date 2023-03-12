@@ -1,7 +1,8 @@
 <template>
+<div class="max-w-7xl mx-auto px-6 md:px-4">
   <div> 
-    <div class="grid grid-cols-12 gap-10 w-full">
-      <div class="md:col-span-6 col-span-10" @click="show(1)">
+    <div class="grid md:grid-cols-12 grid-cols-1 gap-10 ">
+      <div class="md:col-span-6 " @click="show(1)">
         <div class="w-full h-auto overflow-hidden rounded">
           <nuxt-link to="~/assets/content-image-2.png">
             <img
@@ -12,7 +13,7 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="md:col-span-6 col-span-10" @click="show(2)">
+      <div class="md:col-span-6 " @click="show(2)">
         <div class="w-full h-auto overflow-hidden rounded">
           <nuxt-link to="~/assets/content-image-3.png">
             <img
@@ -23,7 +24,7 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="col-span-10 md:col-span-12" @click="show(3)">
+      <div class=" md:col-span-12" @click="show(3)">
         <div class="w-full h-auto overflow-hidden rounded">
           <nuxt-link to="~/assets/content-image-4.png">
             <img
@@ -41,6 +42,7 @@
       :index="indexRef"
       @hide="onHide"
     />
+  </div>
   </div>
 </template>
 
