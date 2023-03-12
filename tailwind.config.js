@@ -22,7 +22,8 @@ module.exports = {
       colors: {
         bgTopbar: "#2e3334",
         bgBeige: "#ebebeb",
-        bgSidebar: "#f5f3f3"
+        bgSidebar: "#f5f3f3",
+        primary:'#fa4529'
       },
     },
   },

@@ -190,6 +190,9 @@
         <li class="mr-8 xl:p-2">
           <nuxt-link to="/karriere" class="focus:outline-none hover:text-white">DXP DEVELOPMENT</nuxt-link>
         </li>
+         <li class="mr-8 xl:p-2">
+          <nuxt-link to="/portfolio/1" class="focus:outline-none hover:text-white">Portfolio</nuxt-link>
+        </li>
         <li class="mr-8 xl:p-2">
           <nuxt-link to="/kontakt" class="focus:outline-none hover:text-white">{{ $t("globalNav.kontakt") }}</nuxt-link>
         </li>
