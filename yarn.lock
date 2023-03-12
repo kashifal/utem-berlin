@@ -6488,6 +6488,11 @@
   "resolved" "https://registry.npmjs.org/vue-devtools-stub/-/vue-devtools-stub-0.1.0.tgz"
   "version" "0.1.0"
 
+"vue-easy-lightbox@^1.14.0":
+  "integrity" "sha512-qjkUCT7qkd5ekqEnLzL+VFAXNVLxhE5XnSz+/RNk0VNpoudL6fVOw9UKMSi9VbeIbhmIdoH1FIscoJzCwm15Rw=="
+  "resolved" "https://registry.npmjs.org/vue-easy-lightbox/-/vue-easy-lightbox-1.14.0.tgz"
+  "version" "1.14.0"
+
 "vue-i18n-routing@^0.12.2":
   "integrity" "sha512-VzYUzbUJyPHUP74t973dN42/sJnZUzBwdcYX+TJgr9YHD08+9uouw5Ume2jHO2Pi8Nymu4cz/UiHWDPeMyc/bQ=="
   "resolved" "https://registry.npmjs.org/vue-i18n-routing/-/vue-i18n-routing-0.12.2.tgz"
