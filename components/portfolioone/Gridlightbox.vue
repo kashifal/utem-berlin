@@ -1,6 +1,6 @@
 <template>
-<div class="max-w-7xl mx-auto px-6 md:px-4">
-  <div> 
+<div class="max-w-7xl mx-auto px-6 md:px-4 pt-16">
+  <div>
     <div class="grid md:grid-cols-12 grid-cols-1 gap-10 ">
       <div class="md:col-span-6 " @click="show(1)">
         <div class="w-full h-auto overflow-hidden rounded">
@@ -49,15 +49,15 @@
 <script>
 import { defineComponent } from 'vue'
 import VueEasyLightbox, { useEasyLightbox } from 'vue-easy-lightbox'
-import img_1 from '~/assets/content-image-1.png' 
-import img_2 from '~/assets/content-image-2.png' 
-import img_3 from '~/assets/content-image-3.png' 
-import img_4 from '~/assets/content-image-4.png' 
+import img_1 from '~/assets/content-image-1.png'
+import img_2 from '~/assets/content-image-2.png'
+import img_3 from '~/assets/content-image-3.png'
+import img_4 from '~/assets/content-image-4.png'
 
 export default defineComponent({
   components: {
     VueEasyLightbox
-  }, 
+  },
   setup() {
     const {
       // methods
@@ -71,7 +71,7 @@ export default defineComponent({
         img_2,
         img_3,
         img_4,
-        
+
       ],
       // initial index
       initIndex: 0
@@ -92,7 +92,7 @@ export default defineComponent({
 </script>
 
 <style lang="" scoped>
-    
-  
+
+
 
 </style>
