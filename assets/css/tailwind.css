@@ -17,29 +17,33 @@
 }
 
 @font-face {
-	font-family: "cerebriBold";
-	src: url("/assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-Bold.ttf") format("truetype");
-  }
+  font-family: "cerebriBold";
+  src: url("/assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-Bold.ttf")
+    format("truetype");
+}
 
-  @font-face {
-	font-family: "cerebriExtraBold";
-	src: url("/assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-ExtraBold.ttf") format("truetype");
-  }
+@font-face {
+  font-family: "cerebriExtraBold";
+  src: url("/assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-ExtraBold.ttf")
+    format("truetype");
+}
 
-  @font-face {
-	font-family: "cerebrilight";
-	src: url("/assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-ExtraLight.ttf") format("truetype");
-  }
+@font-face {
+  font-family: "cerebrilight";
+  src: url("/assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-ExtraLight.ttf")
+    format("truetype");
+}
 
-
-  @font-face {
-	font-family: "cerebriregular";
-	src: url("/assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-Regular.ttf") format("truetype");
-  }
-  @font-face {
-	font-family: "cerebrimedium";
-	src: url("/assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-Medium.ttf") format("truetype");
-  }
+@font-face {
+  font-family: "cerebriregular";
+  src: url("/assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "cerebrimedium";
+  src: url("/assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-Medium.ttf")
+    format("truetype");
+}
 
 @layer base {
   html {
@@ -66,26 +70,23 @@
   }
 }
 
-
-h1{
-	font-family: 'cerebriExtraBold';
+h1 {
+  font-family: "cerebriExtraBold";
 }
 
-p{
-	font-family: 'cerebriregular';
+p {
+  font-family: "cerebriregular";
 }
 
-.medium{
-font-family: 'cerebrimedium';
+.medium {
+  font-family: "cerebrimedium";
 }
 
-
-.normal{
-	font-family: 'cerebriregular';
+.normal {
+  font-family: "cerebriregular";
 }
 
-
-.btn__close{
+.btn__close {
   background-color: #fa4529 !important ;
   right: 0% !important;
   top: 24px !important;
@@ -94,24 +95,22 @@ font-family: 'cerebrimedium';
 
 .btn__next {
   background-color: #fa4529 !important ;
- 
+
   padding: 8px 16px;
   right: 0% !important;
 }
 
 .btn__prev {
   background-color: #fa4529 !important ;
- 
+
   padding: 8px 16px;
   left: 0% !important;
 }
 
-
-input, select {
-  font-family: 'cerebriregular';
+input,
+select {
+  font-family: "cerebriregular";
 }
-
-
 
 .custom-checkbox {
   appearance: none;
@@ -120,22 +119,21 @@ input, select {
   min-height: 1.5rem;
   min-width: 1.5rem;
   background-color: #fff;
-  border: 1px solid #ababab; 
+  border: 1px solid #ababab;
   outline: none;
   cursor: pointer;
 }
 
 .custom-checkbox:checked {
-  background-color: #EF4444;
-  border-color: #EF4444;
+  background-color: #ef4444;
+  border-color: #ef4444;
 }
 
 .custom-checkbox:checked::before {
-  content: '\2713';
+  content: "\2713";
   display: block;
   text-align: center;
   line-height: 1.2rem;
   font-size: 1.25rem;
   color: #fff;
 }
-
