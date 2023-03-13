@@ -30,7 +30,7 @@
             <label for="name" class="block text-2xl label relative">What is your name?</label>
             <input
               type="text"
-              class="block input-field mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 outline-0 focus:border-gray-600 transition-all"
+              class="block   mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 outline-0 focus:outline-0 focus:ring-none focus:border-gray-600 transition-all"
               name="name"
             />
           </div>
@@ -38,7 +38,7 @@
             <label for="name" class="block label_1 text-2xl">What’s the name of your organization?</label>
             <input
               type="text"
-              class="block mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 outline-0 focus:border-gray-600 transition-all"
+              class="block mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 outline-0 focus:outline-0 focus:ring-none focus:border-gray-600 transition-all"
               name="name"
             />
           </div>
@@ -46,7 +46,7 @@
             <label for="name" class="block text-2xl label_2">What’s your email address?</label>
             <input
               type="text"
-              class="block mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 outline-0 focus:border-gray-600 transition-all"
+              class="block mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 outline-0 focus:outline-0 focus:ring-none focus:border-gray-600 transition-all"
               name="name"
             />
           </div>
@@ -57,7 +57,7 @@
             >Tell us about your project goals in a snapshot?</label>
             <input
               type="text"
-              class="block mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 outline-0 focus:border-gray-600 transition-all"
+              class="block mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 outline-0 focus:outline-0 focus:ring-none focus:border-gray-600 transition-all"
               name="name"
             />
           </div>
@@ -65,7 +65,7 @@
             <label for="name" class="block text-2xl label_4">Do you have a timeline in mind?</label>
             <input
               type="text"
-              class="block input-field mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 outline-0 focus:border-gray-600 transition-all"
+              class="block input-field mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 focus:outline-0 focus:ring-none outline-0 focus:border-gray-600 transition-all"
               name="name"
             />
           </div>
@@ -76,7 +76,7 @@
             >What have you budgeted for this project?</label>
             <select
               type="text"
-              class="block mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 outline-0 focus:border-gray-600 transition-all"
+              class="block mt-3 w-full border-b text-4xl py-3 font-semibold border-slate-300 outline-0 focus:outline-0 focus:ring-none focus:border-gray-600 transition-all"
               name="name"
             >
               <option>$300, and under</option>
