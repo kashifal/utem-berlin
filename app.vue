@@ -3,6 +3,8 @@
 
   <Head>
     <Meta name="robots" content="noindex" />
+   <!-- <link rel="stylesheet" href="assets/fonts/simplelineicons.github.io-59d9934f7c769cc0d6a7c7a9e90dd1ee8ed0419a/css/simple-line-icons.css"> -->
+
     <!--        <Link rel="preload" href="/test.txt" as="script" />-->
     <!--        <Style type="text/css" :children="styleString" />-->
   </Head>

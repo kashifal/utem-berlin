@@ -19,6 +19,8 @@
   "dependencies": {
     "@botpoison/browser": "^0.1.30",
     "@fancyapps/fancybox": "^3.5.7",
+    "@headlessui/vue": "^1.7.12",
+    "@heroicons/vue": "^2.0.16",
     "@intlify/nuxt3": "^0.2.4",
     "@pinia/nuxt": "^0.4.6",
     "@splidejs/vue-splide": "^0.6.12",
@@ -32,6 +34,7 @@
     "sass": "^1.58.3",
     "vue-component-media-queries": "^1.0.0",
     "vue-easy-lightbox": "^1.14.0",
+    "vue3-carousel": "^0.2.12",
     "vue3-mq": "^3.1.3"
   }
 }

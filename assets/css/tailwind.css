@@ -45,6 +45,14 @@
     format("truetype");
 }
 
+@font-face {
+  font-family: "cerebrisemi";
+  src: url("/assets/fonts/Cerebri.Sans.Pro/CerebriSansPro-SemiBold.ttf")
+    format("truetype");
+}
+
+
+
 @layer base {
   html {
   }
@@ -136,4 +144,7 @@ select {
   line-height: 1.2rem;
   font-size: 1.25rem;
   color: #fff;
+}
+.semibold{
+  font-family: 'cerebrisemi';
 }
