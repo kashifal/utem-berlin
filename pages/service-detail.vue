@@ -3,15 +3,10 @@
     <serviceDetailHeroSection />
     <serviceDetailLightbox /> 
     <serviceDetailServicelist />
-    <serviceDetailSwiperSection />
-
+    <serviceDetailSwiperSection /> 
+    <Parent />
+    <h1>kashif</h1>
     </div>
 </template>
 
-<script setup>
-
-</script>
-
-<style  scoped>
-
-</style>
+  
